@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --font-family-poppins:'Poppins', sans-serif; }
+
+:root {
+  --font-size-title:2.6rem;
+  --font-size-p:1.4rem; }
+
+:root {
+  --font-weight-small:400;
+  --font-weight-medium:500;
+  --font-weight-big:600; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-family-poppins); }
+
+h1 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-big); }
+
+p {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-small); }
+
+.w-175 {
+  width: 175px; }

@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_base.scss",
+		"../scss/components/_nav.scss",
+		"../scss/components/_banner.scss",
+		"../scss/components/_footer.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,UAAU,GAC/B"
+}
