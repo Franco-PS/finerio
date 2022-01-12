@@ -1,0 +1,16 @@
+.btn{
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-bigB);
+    background-color: var(--color-primary);
+}
+.btn__go{
+    display: flex;
+    justify-content: center;
+    @include rwd(lg){
+        // background-color: rgb(255, 38, 0);
+        display: inline-block;
+        padding: 1.5rem 3.5rem;
+    }
+}

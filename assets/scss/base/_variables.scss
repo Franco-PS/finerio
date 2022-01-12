@@ -7,9 +7,21 @@
     --font-size-title:2.6rem;
     // --font-size-h2:
     --font-size-p:1.4rem;
+    
 }
 :root{
     --font-weight-small:400;
     --font-weight-medium:500;
     --font-weight-big:600;
+    --font-weight-bigB:700;
 }
+
+:root{
+    --color-primary:#3fd8af;
+    --color-secundary:#283255;
+}
+$break:(
+    sm:576px,
+    md:768px,
+    lg:992px
+)

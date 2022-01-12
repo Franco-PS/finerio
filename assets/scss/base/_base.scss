@@ -5,11 +5,18 @@ body{
     font-family: var(--font-family-poppins);
 }
 
-h1{
+body h1{
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-big);
 }
 p{
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-small);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.paddingX{
+    padding: 0  2rem;
 }

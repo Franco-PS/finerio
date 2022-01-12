@@ -12,7 +12,7 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 paddingX">
                     <div class="d-flex justify-content-between align-items-center flex-column-reverse">
                         <div>
                             <img src="https://finerioconnect.com/static/media/Mexico.e8dac542.svg" alt="bandera Mexico">
@@ -26,20 +26,52 @@
                     <section class="text-center text-md-start">
                         <h1>Let's build the future of financial services together.</h1>
                         <p>Unlock the potential behind your data to give your customers better experiences with the most complete, secure and robust open banking API in Latin America.</p>
-                        <a href="">Schedule a demo!</a>
+                        <a href="" class="btn btn__go mb-5">Schedule a demo!</a>
                     </section>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div>
+                <div class="col-12 col-md-6 paddingX banner__imgBlock">
+                    <picture class="banner__imgPc">
+                        <source srcset="./assets/img/finero-pc-mor.jpg" media="(min-width:993px)">
+                        <source srcset="./assets/img/finerio-pc.jpg" media="(max-width:992px)">
+                        <img src="./assets/img/finerio-pc.jpg" alt="img de la página de finerio">
+                    </picture>
+                    <img class="banner__imgCell d-none d-md-block" src="./assets/img/finerio-cell.jpg" alt="">
+                    <!-- <picture>
+                        <source srcset="">
                         <img src="" alt="">
+                    </picture> -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <h2 class="text-center">Some of our clients</h2>
+            <div id="slider" class="slider">
+                <div id="slider__block" class="slider__block">
+                    <div class="container-slider local" >
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/snubank.4164e88b.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sfintonic.37497523.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdinn.74747e15.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/ssura.bf12d8af.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/screditea.6e86a555.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdestacame.371475e3.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/snubank.4164e88b.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdinn.74747e15.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/ssura.bf12d8af.svg" alt="" class="slider__img"></div>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="container-slider" >
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/snubank.4164e88b.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sfintonic.37497523.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdinn.74747e15.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/ssura.bf12d8af.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/screditea.6e86a555.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdestacame.371475e3.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/snubank.4164e88b.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/sdinn.74747e15.svg" alt="" class="slider__img"></div>
+                        <div class="slider__section"><img src="https://finerioconnect.com/static/media/ssura.bf12d8af.svg" alt="" class="slider__img"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid"></div>
     </div>
     <main>
         <article class="container">
@@ -67,5 +99,7 @@
             </div>
         </article>
     </main>
+<!-- <script src="./assets/js/slider.js"></script> -->
+<script src="./assets/scss/vendors/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
