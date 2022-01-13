@@ -9,19 +9,19 @@
     <title>Finerio</title>
 </head>
 <body class="body1">
-    <div class="banner">
+    <header class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 paddingX">
-                    <div class="d-flex justify-content-between align-items-center flex-column-reverse">
+                    <div class="banner__box">
+                        <img class="w-175" src="./assets/img/trophy_visa.aff71e1d.png" alt="Winner 2021">
                         <div>
                             <img src="https://finerioconnect.com/static/media/Mexico.e8dac542.svg" alt="bandera Mexico">
                             <img src="https://finerioconnect.com/static/media/Brasil.259e58a0.svg" alt="bandera Brasil">
                             <img src="https://finerioconnect.com/static/media/Chile.10460929.svg" alt="bandeta Chile">
                             <img src="https://finerioconnect.com/static/media/Colombia.852e6503.svg" alt="bandera Colombia">
                             <img src="https://finerioconnect.com/static/media/Peru.06434edf.svg" alt="bandera Peru">
-                        </div>
-                        <img class="w-175" src="./assets/img/trophy_visa.aff71e1d.png" alt="Winner 2021">                        
+                        </div>                        
                     </div>
                     <section class="text-center text-md-start">
                         <h1>Let's build the future of financial services together.</h1>
@@ -30,12 +30,12 @@
                     </section>
                 </div>
                 <div class="col-12 col-md-6 paddingX banner__imgBlock">
-                    <picture class="banner__imgPc">
+                    <picture class="banner__imgPc box__shadow-primary">
                         <source srcset="./assets/img/finero-pc-mor.jpg" media="(min-width:993px)">
                         <source srcset="./assets/img/finerio-pc.jpg" media="(max-width:992px)">
                         <img src="./assets/img/finerio-pc.jpg" alt="img de la página de finerio">
                     </picture>
-                    <img class="banner__imgCell d-none d-md-block" src="./assets/img/finerio-cell.jpg" alt="">
+                    <img class="banner__imgCell d-none d-md-block box__shadow-primary" src="./assets/img/finerio-cell.jpg" alt="">
                     <!-- <picture>
                         <source srcset="">
                         <img src="" alt="">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid px-0">
+        <section class="container-fluid px-0 my-5">
             <h2 class="text-center">Some of our clients</h2>
             <div id="slider" class="slider">
                 <div id="slider__block" class="slider__block">
@@ -71,34 +71,68 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </header>
     <main>
-        <article class="container">
-            <h3>Our solutions</h3>
-            <div class="container-fluid">
-                <ul>
-                    <a href="/">Open<br>Finance</a>
-                    <a href="data">Data<br>Enrichment</a>
-                    <a href="experience">User<br>Experience</a>
-                    <a href="support">Support<br>Implementation</a>
+        <section class="container my-5 paddingX ">
+            <h2>Our solutions</h2>
+            <div class="container box__shadow-primary px-0 py-5">
+                <ul class="box__ulTabs">
+                    <a href="#">Open<br>Finance</a>
+                    <a href="#">Data<br>Enrichment</a>
+                    <a href="#">User<br>Experience</a>
+                    <a href="#">Support<br>Implementation</a>
                 </ul>
                 <div class="row">
-                    <div class="col col-md-6">
-                        <h2>Open Finance</h2>
-                        <h4>Centralize dispersed information while verifying identities, accounts and balances.</h4>
+                    <div class="col-12 col-md-6 paddingX my-5">
+                        <h3>Open Finance</h3>
+                        <p class="fw-bold">Centralize dispersed information while verifying identities, accounts and balances.</p>
                         <p class="clas">Allow users to instantly connect their financial accounts.</p>
                         <p>As easy as creating a link or as robust as an API.</p>
-                        <p>90% bank coverage in our markets, and always adding more institutions.</p>
-                        <a href="">Find out more <span></span></a>
+                        <p class="fw-bold">90% bank coverage in our markets, and always adding more institutions.</p>
+                        <a href="" class="btn btn__go ">Find out more <span></span></a>
                     </div>
-                    <div class="col col-md-6">
-                        <img src="" alt="">
-                    </div>
+                    <picture class="img-block col-12 col-md-6 paddingX">
+                        <img class="img__img " src="./assets/img/dato.jpg" alt="celular con aplicaciones bancarias">
+                    </picture>
                 </div>
             </div>
-        </article>
+        </section>
     </main>
+<footer class="footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <h4>Solutions</h4>
+                <a href="#">Account aggregation</a>
+                <a href="#">Data enrichment</a>
+                <a href="#">Personal Finance Management</a>
+            </div>
+            <div class="d-none d-md-block col-md-3">
+                <h4>Developers</h4>
+                <a href="#">Documentation</a>
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="d-none d-md-block col-md-3">
+                <h4>About us</h4>
+                <a href="#">Let's connect</a>
+                <a href="#">Security</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="d-none d-md-block col-md-3">
+                <h4> More Information</h4>
+                <a href="#">Linkedin</a>
+                <a href="#">Facebook</a>
+                <a href="#">Blog</a>
+            </div>
+            <hr class="text-white py-1">
+            <div class="py-1">
+                <p>Terms and Conditions 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- <script src="./assets/js/slider.js"></script> -->
 <script src="./assets/scss/vendors/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>

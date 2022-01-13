@@ -1,13 +1,24 @@
 // typograph
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+$break:(
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+)
 :root{
     --font-family-poppins:'Poppins', sans-serif;
 }
 :root{
+    --font-size-h1:2.6rem;
     --font-size-title:2.6rem;
     // --font-size-h2:
-    --font-size-p:1.4rem;
-    
+    --font-size-h3:2.2rem;
+    --font-size-ul-btn:1.6rem;
+    --font-size-p:1.5rem;
+    @include rwd(md){
+        --font-size-ul-btn:1.8rem;
+    }
 }
 :root{
     --font-weight-small:400;
@@ -19,9 +30,6 @@
 :root{
     --color-primary:#3fd8af;
     --color-secundary:#283255;
+    --color-secundary-weak:#EFFCF8;
+    --color-shadown:rgba(0, 0, 0, 0.445);
 }
-$break:(
-    sm:576px,
-    md:768px,
-    lg:992px
-)

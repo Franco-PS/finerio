@@ -1,0 +1,16 @@
+.footer{
+    padding-top: 3rem;
+    background-color: var(--color-secundary);
+}
+.footer h4{
+    padding: 1.5rem 0;
+    font-size: var(--font-size-h3);
+    color: var(--color-primary);
+}
+.footer a, .footer p{
+    display: block;
+    color: white;
+    font-size: var(--font-size-p);
+    padding: .8rem 0;
+    margin-bottom: .5rem;
+}

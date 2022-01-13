@@ -1,5 +1,5 @@
 @mixin rwd($breakPoints) {
     @media screen and (min-width: map-get($break,$breakPoints)) {
-     @content   
+     @content;   
     }
 }

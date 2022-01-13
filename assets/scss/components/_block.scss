@@ -1,0 +1,38 @@
+.box__ulTabs{
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.box__ulTabs a{
+    font-size: var(--font-size-ul-btn);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    color:var(--color-secundary);
+    background-color: var(--color-secundary-weak);
+    :hover{
+        color:var(--color-primary);
+    }
+}
+.img-block{
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    @include rwd(lg){
+        width: 380px;
+        margin: 1rem auto;
+        height: 520px;
+    }
+}
+.img__img{
+    border: .1rem solid transparent;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px var(--color-shadown);
+    @include rwd(xl){
+        position: absolute;
+        height: 520px;
+        top: -5rem;
+    }
+}
