@@ -1,0 +1,23 @@
+.barr__background{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--color-secundary);
+    height: var(--barr-height);
+    z-index: var(--z-up1);
+}
+.barr__box{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.barr__logo{
+    width: 13rem;
+}
+.iconMenu{
+    color: var(--color-primary);
+    font-size:x-large;
+    padding-right: 1rem;
+    cursor: pointer;
+}

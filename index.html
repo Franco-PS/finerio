@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://finerioconnect.com/favicon.png">
     <link rel="stylesheet" href="./assets/scss/vendors/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Finerio</title>
 </head>
 <body class="body1">
+    <header class="container-fluid px-0 barr__background">
+        <div id="barr__box" class="container barr__box">
+            <img class="barr__logo" src="./assets/svg/logo-1.svg" alt="Logotipo finero">
+            <div id="iconMenu" class="iconMenu d-md-none">&#x2630</div>
+            <nav id="barr__nav" class="barr__nav">
+                <ul class="nav__first">
+                    <li><a href="#">English</a></li>
+                    <li class="nav__box"><a href="#">Products <span class="d-md-none">&#x21f2</span></a></li>
+                    <li class="nav__box text-md-left"><a href="#">About Us <span class="d-md-none">&#x21f2</span></a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a class="nav__btn" href="#">Let's connect.!!</a></li>
+                </ul>
+                <div id="nav-box" class="nav-box d-md-none"></div>
+            </nav>
+        </div>
+    </header>
     <header class="banner">
+        <!-- banner-first -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 paddingX">
@@ -43,9 +62,10 @@
                 </div>
             </div>
         </div>
-        <section class="container-fluid px-0 my-5">
+        <!-- slider -->
+        <section class="container-fluid px-0 py-md-5 my-5">
             <h2 class="text-center">Some of our clients</h2>
-            <div id="slider" class="slider">
+            <div id="slider" class="slider box__shadow-primary">
                 <div id="slider__block" class="slider__block">
                     <div class="container-slider local" >
                         <div class="slider__section"><img src="https://finerioconnect.com/static/media/snubank.4164e88b.svg" alt="" class="slider__img"></div>
@@ -74,6 +94,7 @@
         </section>
     </header>
     <main>
+        <!-- Our solutions -->
         <section class="container my-5 paddingX ">
             <h2>Our solutions</h2>
             <div class="container box__shadow-primary px-0 py-5">
@@ -133,7 +154,7 @@
         </div>
     </div>
 </footer>
-<!-- <script src="./assets/js/slider.js"></script> -->
-<script src="./assets/scss/vendors/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="./assets/js/nav.js"></script>
+<!-- <script src="./assets/scss/vendors/bootstrap-5.0.2-dist/js/bootstrap.js"></script> -->
 </body>
 </html>

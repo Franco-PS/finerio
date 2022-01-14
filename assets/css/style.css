@@ -22,7 +22,17 @@
   --color-primary:#3fd8af;
   --color-secundary:#283255;
   --color-secundary-weak:#EFFCF8;
+  --color-black:rgba(10, 10, 10, 0.671);
   --color-shadown:rgba(0, 0, 0, 0.445); }
+
+:root {
+  --barr-height:8.1rem;
+  --nav-height:29rem; }
+
+:root {
+  --z-down:-1;
+  --z-normal:1;
+  --z-up1:10; }
 
 html {
   font-size: 62.5%; }
@@ -55,10 +65,90 @@ img {
   padding: 0  2rem; }
 
 .box__shadow-primary {
-  box-shadow: 5px 5px 5px var(--color-shadown); }
+  box-shadow: 5px 5px 15px var(--color-shadown); }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
 
 a {
   text-decoration: none; }
+
+.barr__background {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-secundary);
+  height: var(--barr-height);
+  z-index: var(--z-up1); }
+
+.barr__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.barr__logo {
+  width: 13rem; }
+
+.iconMenu {
+  color: var(--color-primary);
+  font-size: x-large;
+  padding-right: 1rem;
+  cursor: pointer; }
+
+.barr__nav {
+  position: absolute;
+  background-color: var(--color-primary);
+  top: var(--barr-height);
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: var(--font-size-ul-btn);
+  font-weight: var(--font-weight-bigB); }
+  @media screen and (min-width: 768px) {
+    .barr__nav {
+      position: static;
+      height: auto;
+      background-color: transparent; } }
+
+.barr__nav-show {
+  height: var(--nav-height);
+  overflow: visible; }
+
+@media screen and (min-width: 768px) {
+  .nav__first {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; } }
+
+ul a {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--color-secundary); }
+  ul a:hover {
+    background-color: var(--color-black);
+    color: var(--color-primary); }
+  ul a:active {
+    color: var(--color-secundary-weak); }
+  @media screen and (min-width: 768px) {
+    ul a {
+      padding: .5rem 1rem;
+      color: var(--color-primary); } }
+
+.nav__btn {
+  display: inline-block;
+  border: 0.5rem solid var(--color-black);
+  margin-left: 2rem; }
+  .nav__btn:hover {
+    background-color: var(--color-black); }
+
+.nav-box {
+  height: calc(100vh - var(--barr-height) - var(--nav-height));
+  background-color: transparent; }
 
 .btn {
   padding: 1.5rem 1rem;
@@ -74,6 +164,9 @@ a {
     .btn__go {
       display: inline-block;
       padding: 1.5rem 3.5rem; } }
+
+.banner {
+  margin-top: var(--barr-height); }
 
 .banner__box {
   display: flex;
@@ -182,7 +275,7 @@ a {
 .img__img {
   border: .1rem solid transparent;
   border-radius: 2rem;
-  box-shadow: 5px 5px 15px var(--color-shadown); }
+  box-shadow: 5px 5px 10px var(--color-shadown); }
   @media screen and (min-width: 1200px) {
     .img__img {
       position: absolute;

@@ -30,7 +30,13 @@ img{
     padding: 0  2rem;
 }
 .box__shadow-primary{
-    box-shadow: 5px 5px 5px var(--color-shadown);
+    box-shadow: 5px 5px 15px var(--color-shadown);
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
 }
 a{
     text-decoration:none;
