@@ -1,7 +1,5 @@
-
-.barr__nav{
+.nav__box{
     position: absolute;
-    background-color: var(--color-primary);
     top: var(--barr-height);
     left: 0;
     right: 0;
@@ -11,15 +9,26 @@
     font-weight: var(--font-weight-bigB);
     @include rwd(md){
         position:static;
-        // width: auto;
         height: auto;
-        // top: 0;
         background-color: transparent;
     }
 }
-.barr__nav-show{
-    height: var(--nav-height);
+.nav__box-show{
     overflow: visible;
+}
+.nav-box-ul{
+    height: var(--nav-height);
+    background-color: var(--color-primary);
+}
+.container-sm-oll{
+    @include rwd(xm){
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 }
 .nav__first{
     @include rwd(md){
@@ -52,7 +61,7 @@ ul a{
         background-color: var(--color-black);
     }
 }
-.nav-box{
-    height: calc(100vh - var(--barr-height) - var(--nav-height));
+.nav__box-btn{
+    height: calc(100vh - var(--barr-height));
     background-color: transparent
 }

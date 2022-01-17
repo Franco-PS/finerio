@@ -27,7 +27,7 @@
 
 :root {
   --barr-height:8.1rem;
-  --nav-height:29rem; }
+  --nav-height:auto; }
 
 :root {
   --z-down:-1;
@@ -53,6 +53,11 @@ h3 {
   font-weight: var(--font-weight-medium);
   margin-bottom: 3rem; }
 
+h4 {
+  font-size: var(--font-size-ul-btn);
+  font-weight: var(--font-weight-bigB);
+  margin-bottom: 1.5rem; }
+
 p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-small); }
@@ -68,7 +73,8 @@ img {
   box-shadow: 5px 5px 15px var(--color-shadown); }
 
 ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 0; }
 
 li {
   list-style: none; }
@@ -99,9 +105,8 @@ a {
   padding-right: 1rem;
   cursor: pointer; }
 
-.barr__nav {
+.nav__box {
   position: absolute;
-  background-color: var(--color-primary);
   top: var(--barr-height);
   left: 0;
   right: 0;
@@ -110,14 +115,25 @@ a {
   font-size: var(--font-size-ul-btn);
   font-weight: var(--font-weight-bigB); }
   @media screen and (min-width: 768px) {
-    .barr__nav {
+    .nav__box {
       position: static;
       height: auto;
       background-color: transparent; } }
 
-.barr__nav-show {
-  height: var(--nav-height);
+.nav__box-show {
   overflow: visible; }
+
+.nav-box-ul {
+  height: var(--nav-height);
+  background-color: var(--color-primary); }
+
+@media screen and (min-width: 320px) {
+  .container-sm-oll {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media screen and (min-width: 768px) {
   .nav__first {
@@ -146,9 +162,27 @@ ul a {
   .nav__btn:hover {
     background-color: var(--color-black); }
 
-.nav-box {
-  height: calc(100vh - var(--barr-height) - var(--nav-height));
+.nav__box-btn {
+  height: calc(100vh - var(--barr-height));
   background-color: transparent; }
+
+.box__subMenu {
+  height: 0;
+  overflow: hidden; }
+
+.box__subMenu-0 {
+  padding: 1rem 2rem;
+  height: auto;
+  overflow: visible; }
+
+.box__subMenu-1 {
+  padding: 1rem 2rem;
+  height: auto;
+  overflow: visible; }
+
+.box__subMenu a {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-small); }
 
 .btn {
   padding: 1.5rem 1rem;

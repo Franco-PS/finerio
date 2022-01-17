@@ -1,6 +1,7 @@
 // typograph
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 $break:(
+    xm:320px,
     sm:576px,
     md:768px,
     lg:992px,
@@ -35,7 +36,7 @@ $break:(
 }
 :root{
     --barr-height:8.1rem;
-    --nav-height:29rem;
+    --nav-height:auto;
 }
 :root{
     --z-down:-1;
