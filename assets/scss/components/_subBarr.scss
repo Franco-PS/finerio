@@ -1,0 +1,21 @@
+.box__subMenu{
+    // background-color: red;
+    // padding: 1rem 2rem;
+    height: 0;
+    overflow: hidden;
+
+}
+.box__subMenu-0{
+    padding: 1rem 2rem;
+    height: auto;
+    overflow: visible;
+}
+.box__subMenu-1{
+    padding: 1rem 2rem;
+    height: auto;
+    overflow: visible;
+}
+.box__subMenu a{
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-small);
+}
