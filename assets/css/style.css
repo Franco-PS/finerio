@@ -10,7 +10,8 @@
   --font-size-p:1.5rem; }
   @media screen and (min-width: 768px) {
     :root {
-      --font-size-ul-btn:1.8rem; } }
+      --font-size-ul-btn:1.9rem;
+      --font-size-p:1.7rem; } }
 
 :root {
   --font-weight-small:400;
@@ -89,7 +90,8 @@ a {
   top: 0;
   background-color: var(--color-secundary);
   height: var(--barr-height);
-  z-index: var(--z-up1); }
+  z-index: var(--z-up1);
+  box-shadow: 5px 5px 10px var(--color-shadown); }
 
 .barr__box {
   display: flex;
@@ -126,6 +128,9 @@ a {
 .nav-box-ul {
   height: var(--nav-height);
   background-color: var(--color-primary); }
+  @media screen and (min-width: 768px) {
+    .nav-box-ul {
+      background-color: transparent; } }
 
 @media screen and (min-width: 320px) {
   .container-sm-oll {
@@ -166,23 +171,39 @@ ul a {
   height: calc(100vh - var(--barr-height));
   background-color: transparent; }
 
+@media screen and (min-width: 768px) {
+  .box__linkSubMenu {
+    display: flex; } }
+
 .box__subMenu {
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 5px 5px 10px var(--color-shadown); }
+  @media screen and (min-width: 768px) {
+    .box__subMenu {
+      position: absolute;
+      top: var(--barr-height);
+      left: 0;
+      right: 0;
+      background-color: #dde1e6; } }
 
-.box__subMenu-0 {
+.box__subMenu-0, .box__subMenu-1 {
   padding: 1rem 2rem;
   height: auto;
   overflow: visible; }
 
-.box__subMenu-1 {
-  padding: 1rem 2rem;
-  height: auto;
-  overflow: visible; }
+.box__subMenu img {
+  max-width: 4.6rem;
+  max-height: 4.6rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-primary); }
 
 .box__subMenu a {
   font-size: var(--font-size-p);
-  font-weight: var(--font-weight-small); }
+  font-weight: var(--font-weight-small);
+  padding-left: 0; }
 
 .btn {
   padding: 1.5rem 1rem;

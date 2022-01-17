@@ -19,6 +19,9 @@
 .nav-box-ul{
     height: var(--nav-height);
     background-color: var(--color-primary);
+    @include rwd(md){
+        background-color: transparent;
+    }
 }
 .container-sm-oll{
     @include rwd(xm){
@@ -51,6 +54,7 @@ ul a{
     @include rwd(md){
         padding: .5rem 1rem;
         color: var(--color-primary);
+        // display: inline-block;
     }
 }
 .nav__btn{

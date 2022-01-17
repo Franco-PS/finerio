@@ -17,7 +17,8 @@ $break:(
     --font-size-ul-btn:1.6rem;
     --font-size-p:1.5rem;
     @include rwd(md){
-        --font-size-ul-btn:1.8rem;
+        --font-size-ul-btn:1.9rem;
+        --font-size-p:1.7rem;
     }
 }
 :root{
