@@ -1,5 +1,5 @@
 .box__linkSubMenu{
-    @include rwd(md){
+    @include rwd(lg){
         display: flex;
     }
 }
@@ -7,7 +7,7 @@
     height: 0;
     overflow: hidden;  
     box-shadow: 5px 5px 10px var(--color-shadown);  
-    @include rwd(md){
+    @include rwd(lg){
         position: absolute;
         top: var(--barr-height);
         // height: auto;

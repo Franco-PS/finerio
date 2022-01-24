@@ -7,7 +7,7 @@
     overflow: hidden;
     font-size: var(--font-size-ul-btn);
     font-weight: var(--font-weight-bigB);
-    @include rwd(md){
+    @include rwd(lg){
         position:static;
         height: auto;
         background-color: transparent;
@@ -19,7 +19,7 @@
 .nav-box-ul{
     height: var(--nav-height);
     background-color: var(--color-primary);
-    @include rwd(md){
+    @include rwd(lg){
         background-color: transparent;
     }
 }
@@ -34,7 +34,7 @@
     }
 }
 .nav__first{
-    @include rwd(md){
+    @include rwd(lg){
         display: flex;
         align-items: center;
         margin-bottom: 0;
@@ -51,7 +51,7 @@ ul a{
     &:active{
         color: var(--color-secundary-weak);
     }
-    @include rwd(md){
+    @include rwd(lg){
         padding: .5rem 1rem;
         color: var(--color-primary);
         // display: inline-block;

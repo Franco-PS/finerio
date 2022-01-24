@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://finerioconnect.com/favicon.png">
     <link rel="stylesheet" href="./assets/scss/vendors/bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css?202215">
+    <link rel="stylesheet" href="./assets/css/style.css?202220">
     <title>Finerio</title>
 </head>
 <body class="body1">
     <header class="container-fluid px-0 barr__background">
         <div id="barr__box" class="container barr__box">
             <img class="barr__logo" src="./assets/svg/logo-1.svg" alt="Logotipo finero">
-            <div id="iconMenu" class="iconMenu d-md-none">&#x2630</div>
+            <div id="iconMenu" class="iconMenu d-lg-none">&#x2630</div>
             <nav id="nav__box" class="nav__box">
                 <div class="nav-box-ul">
                     <ul class="nav__first container-sm-oll">
@@ -100,11 +100,11 @@
                         <li><a class="nav__btn mb-3 mb-md-0" href="#">Let's connect.!!</a></li>
                     </ul>
                 </div>
-                <div id="nav__box-btn" class="nav__box-btn d-md-none"></div>
+                <div id="nav__box-btn" class="nav__box-btn d-lg-none"></div>
             </nav>
         </div>
     </header>
-    <header class="banner">
+    <div class="banner">
         <!-- banner-first -->
         <div class="container">
             <div class="row">
@@ -169,26 +169,30 @@
                 </div>
             </div>
         </section>
-    </header>
+    </div>
     <main>
         <!-- Our solutions -->
         <section class="container my-5 paddingX ">
             <h2>Our solutions</h2>
             <div class="container box__shadow-primary px-0 py-5">
-                <ul class="box__ulTabs">
-                    <a href="#">Open<br>Finance</a>
-                    <a href="#">Data<br>Enrichment</a>
-                    <a href="#">User<br>Experience</a>
-                    <a href="#">Support<br>Implementation</a>
-                </ul>
+                <nav  class="block__nav">
+                    <ul id="block__nav" class="box__ulTabs">
+                        <a >Open<br>Finance</a>
+                        <a >Data<br>Enrichment</a>
+                        <a >User<br>Experience</a>
+                        <a >Support<br>Implementation</a>
+                    </ul>
+                </nav>
                 <div class="row">
-                    <div class="col-12 col-md-6 paddingX my-5">
-                        <h3>Open Finance</h3>
-                        <p class="fw-bold">Centralize dispersed information while verifying identities, accounts and balances.</p>
-                        <p class="clas">Allow users to instantly connect their financial accounts.</p>
-                        <p>As easy as creating a link or as robust as an API.</p>
-                        <p class="fw-bold">90% bank coverage in our markets, and always adding more institutions.</p>
-                        <a href="" class="btn btn__go ">Find out more <span></span></a>
+                    <div id="block__artitle" class="col-12 col-md-6  my-5 paddingX">
+                        <artitle class="block__artitle">
+                            <h3>Open Finance</h3>
+                            <p class="fw-bold">Centralize dispersed information while verifying identities, accounts and balances.</p>
+                            <p class="clas">Allow users to instantly connect their financial accounts.</p>
+                            <p>As easy as creating a link or as robust as an API.</p>
+                            <p class="fw-bold">90% bank coverage in our markets, and always adding more institutions.</p>
+                            <a href="#" class="btn btn__go ">Find out more <span></span></a>
+                        </artitle>
                     </div>
                     <picture class="img-block col-12 col-md-6 paddingX">
                         <img class="img__img " src="./assets/img/dato.jpg" alt="celular con aplicaciones bancarias">
@@ -231,6 +235,9 @@
         </div>
     </div>
 </footer>
+<script src="./assets/js/class.js"></script>
+<script src="./assets/js/instansia.js"></script>
+<script src="./assets/js/boxNav.js"></script>
 <script src="./assets/js/nav.js"></script>
 <!-- <script src="./assets/scss/vendors/bootstrap-5.0.2-dist/js/bootstrap.js"></script> -->
 </body>

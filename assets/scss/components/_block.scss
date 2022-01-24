@@ -1,3 +1,9 @@
+.block__nav{
+    border-right: 3rem solid;
+    @include rwd (md){
+        border-right: none;
+    }
+}
 .box__ulTabs{
     display: flex;
     padding: 0;

@@ -35,6 +35,10 @@
   --z-normal:1;
   --z-up1:10; }
 
+.row {
+  margin-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: calc(var(--bs-gutter-x) * .5); }
+
 html {
   font-size: 62.5%; }
 
@@ -116,7 +120,7 @@ a {
   overflow: hidden;
   font-size: var(--font-size-ul-btn);
   font-weight: var(--font-weight-bigB); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     .nav__box {
       position: static;
       height: auto;
@@ -128,11 +132,11 @@ a {
 .nav-box-ul {
   height: var(--nav-height);
   background-color: var(--color-primary); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     .nav-box-ul {
       background-color: transparent; } }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 500px) {
   .container-sm-oll {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -140,7 +144,7 @@ a {
     margin-left: auto;
     margin-right: auto; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav__first {
     display: flex;
     align-items: center;
@@ -155,7 +159,7 @@ ul a {
     color: var(--color-primary); }
   ul a:active {
     color: var(--color-secundary-weak); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     ul a {
       padding: .5rem 1rem;
       color: var(--color-primary); } }
@@ -171,7 +175,7 @@ ul a {
   height: calc(100vh - var(--barr-height));
   background-color: transparent; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .box__linkSubMenu {
     display: flex; } }
 
@@ -179,7 +183,7 @@ ul a {
   height: 0;
   overflow: hidden;
   box-shadow: 5px 5px 10px var(--color-shadown); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     .box__subMenu {
       position: absolute;
       top: var(--barr-height);
@@ -299,6 +303,12 @@ ul a {
     .slider__img {
       min-width: 120px;
       min-height: 6rem; } }
+
+.block__nav {
+  border-right: 3rem solid; }
+  @media screen and (min-width: 768px) {
+    .block__nav {
+      border-right: none; } }
 
 .box__ulTabs {
   display: flex;
